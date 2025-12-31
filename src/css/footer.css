@@ -1,0 +1,42 @@
+/* Footer wrapper */
+.footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+
+    z-index: 100;
+}
+
+
+/* Footer layout */
+.footer-page {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Icon sizing */
+.footer-page svg {
+    font-size: 1.6rem;
+}
+
+/* Central plus button */
+.plus {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00d17e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Optional: active color variables */

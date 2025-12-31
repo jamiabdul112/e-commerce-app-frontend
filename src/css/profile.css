@@ -1,0 +1,105 @@
+/* Wrapper to center the mobile UI */
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Mobile-first container */
+.profile-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    color: #222;
+    margin-bottom: 2rem;
+}
+
+/* Tablet/Desktop: simulate phone frame */
+@media (min-width: 768px) {
+    .profile-page {
+        max-width: 420px;
+        min-height: 850px;
+        border-radius: 40px;
+        margin: 20px;
+        border: 8px solid #1a1a1a;
+    }
+}
+
+/* Top bar */
+.profile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-p {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* User info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 30px;
+    margin-top: 17px;
+}
+
+.user-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile-p-2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.faded-p-profile {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Section headers */
+.profile-p-3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Section items */
+.profile-p-address {
+    font-size: 0.95rem;
+    color: #333;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.profile-p-address:hover {
+    color: #00b36b;
+}
+
+.user-address,
+.user-general,
+.user-legal, 
+.user-personal {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
