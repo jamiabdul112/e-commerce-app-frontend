@@ -45,12 +45,7 @@ function App() {
     retry : false
   })
 
-  const [isAndroid, setIsAndroid] = useState(false);
-
-  useEffect(() => {
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-    setIsAndroid(/android/i.test(ua));
-  }, []);
+  
 
 
   if(isLoading){
